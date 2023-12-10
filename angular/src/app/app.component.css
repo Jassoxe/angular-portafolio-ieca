@@ -113,7 +113,7 @@ h3::before {
 }
 
 .directivas .pokemons {
-  border: 1px dashed red;
+  border: 1px dashed rgb(255, 33, 33);
   width: 100%;
   display: flex;
 }
@@ -127,8 +127,15 @@ h3::before {
 }
 
 .directivas .pokemons div {
-  border: 1px dashed green;
+  border: 1px dashed rgb(3, 205, 3);
   width: 150px;
   font-size: 0.85rem;
 }
 
+.directivas .pokemones div {
+  border: 1px dashed rgb(0, 214, 252);
+  width: 150px;
+  margin: 0 auto;
+  padding-left: 15px;
+  font-size: 0.85rem;
+}
