@@ -14,7 +14,6 @@ class ListaNumeros {
     constructor(numeros) {
         this._numeros = numeros
     }
-
     get numeros() {
         return this._numeros
     }
@@ -28,7 +27,8 @@ class ListaNumeros {
        
         // Calculo de la media
         const media = this.numeros.reduce((a, b) => a + b, 0) / this.numeros.length
-
+        var filtrados = this.numeros.filter((numero) => numero > media);
+        console.log(filtrados)
         // COMPLETA AQUÍ CÓDIGO CON MÉTODO .filter
     }
 
@@ -42,7 +42,9 @@ class ListaNumeros {
         */
 
         // COMPLETA AQUÍ CÓDIGO CON MÉTODO .sort
-
+        this.numeros.sort(function (a, b) {
+            return b - a;
+          });
         console.log(this.numeros)
     }
     
